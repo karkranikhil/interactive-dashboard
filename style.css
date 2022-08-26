@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+/*fonts*/
+@font-face {
+  font-family: AlvaroCondensed;
+  src: url("AlvaroCondensed.woff") format("woff"), url("AlvaroCondensed.ttf") format("truetype");
+}
+/* utility */
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+:root {
+  --black:#111111;
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --offwhite:#f7f7f9;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --royal-blue:#0d2954;
+
+
+  --page-background:var(--offwhite);
+  --page-color: var(--black);
+  --header-bg:var(--royal-blue);
+  --card-header-bg:var(--royal-blue);
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Raleway, sans-serif, Arial, Helvetica, AlvaroCondensed;
+  font-size: 16px;
+  color: var(--page-color);
+  padding: 0 1rem;
+  background-color:var(--page-background);
+}
+h1{
+margin: 0rem;
+font-size: 32px;
+}
+nav{
+  background: var(--header-bg);
+  color:var(--white);
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: 0px -1rem;
+}
+nav>h1, main{
+  max-width: 1400px;
+  margin: auto;
+}
+header{
+  padding: 2rem 0px;
+}
+
+.page-heading{
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+.page-subheading{
+  font-weight: 400;
+  line-height: 1.5;
+  color: #646464;
+  margin-top: 0px;
+}
+.card{
+  background-color: var(--white);
+  padding: 0px 22px 28px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px 0px rgb(229 229 229 / 75%);
+  height: 100%;
+}
+.card-header{
+  border-bottom: 1px solid #e9ebec;
+  margin: 0px -28px 24px -28px;
+  padding: 0px 1rem 1rem;
+  background: var(--card-header-bg);
+  color: var(--white);
+  padding-top: 16px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin: 0px -22px 24px -22px;
+}
+.card-header>h3{
+  margin: 0px;
+  font-weight: 400;
+}
+.barchart-container {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+.chart-container {
+  width: 100%;
+  margin: 0 auto;
+}
+ol{
+  padding-left: 16px;
+}
+
+@media (max-width: 720px) {
+  nav>h1{
+      font-size: 20px;
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- add meta data -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>INTERACTIVE DATA VISUALISATION (DASHBOARD ONE-PAGER)</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="helper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+	<nav>
+		<h1>INTERACTIVE DATA VISUALISATION</h1>
+	</nav>
+	<main>
+		<header>
+			<h2 class="page-heading">VIND DE BAAN DIE BIJ JE PAST</h2>
+			<p class="page-subheading">Ontwikkeling lagere- en middelbare beroepsgroepen in Nederland in het derde kwartaal
+				van 2020</p>
+		</header>
+		<div class="row">
+			<div class="col-12">
+				<div class="card-container">
+					<div class="card">
+						<div class="card-header">
+							<h3>Vakgebieden met de meeste vacatures</h3>
+						</div>
+						<div class="card-body barchart-container">
+							<canvas id="mostvacancies" aria-label="Vakgebieden met de meeste vacatures"></canvas>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row margin-top-2rem">
+			<div class="col-12 col-md-6 col-lg-4 margin-bottom-2rem">
+				<div class="card">
+					<div class="card-header">
+						<h3>Meest Gevraagde Beroepen</h3>
+					</div>
+					<div class="card-body chart-container">
+						<h4 class="heading">23953</h1>
+							<p>Hier ontdek je welke bedrijven bij jou passen, welke talenten het meest worden gevraagd en waar je jouw
+								ideale baan kunt vinden. Of je nou servicemonteur bent, productiemedewerker of verkoper, deze
+								infographic helpt jou verder aan de hand van de meest actuele cijfers.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 margin-bottom-2rem">
+				<div class="card">
+					<div class="card-header">
+						<h3>Meest Gevraagde Beroepen</h3>
+					</div>
+					<div class="card-body chart-container">
+						<h4 class="heading">43%</h1>
+							<ol>
+								<li>Monteurs industriële machines</li>
+								<li>Productiemedewerkers</li>
+								<li>Verkopers</li>
+								<li>Verzorgden en verpleekundigen</li>
+								<li>Chauffeurs - en expeditie medewerkers</li>
+								<li>Medewerkers klantenservice</li>
+							</ol>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4  margin-bottom-2rem">
+				<div class="card">
+					<div class="card-header">
+						<h3>Op Zoek Naar Een Baan: Waar Gebeurt Het?</h3>
+					</div>
+					<div class="card-body chart-container">
+						<div class="card-body chart-container">
+							<h4 class="heading">43% ON YOUR MOBILE</h1>
+								<p>Job seekers do not therefore flock to their desktop when they want a new job.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 margin-bottom-2rem">
+				<div class="card">
+					<div class="card-header">
+						<h3>Welke Werkzaamheden Horen Bij Jouw Beroep</h3>
+					</div>
+					<div class="card-body chart-container">
+						<canvas id="applyProfession" style="height:100%"
+							aria-label="Welke Werkzaamheden Horen Bij Jouw Beroep"></canvas>
+					</div>
+					<p>Je bent de baas van het magazijn en regelt de inkoop; Je houdt de fabriek en het terrein mooi schoon; Je
+						poetst machines en gereedschap; Je gaat aan de slag met gereedschappen, apparatuur of materialen; Je leest
+						en gebruikt technische tekeningen of handleidingen; Je zorgt dat alles netjes onderhouden en geregeld wordt.
+					</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 margin-bottom-2rem">
+				<div class="card">
+					<div class="card-header">
+						<h3>Waar Moet Je Wezen voor Jouw Nieuwe Baan?</h3>
+					</div>
+					<div class="card-body chart-container" style="height:400px">
+						<canvas id="newjob" style="height:100%" aria-label="Waar Moet Je Wezen voor Jouw Nieuwe Baan?"></canvas>
+					</div>
+					<p>Directe Werkgevers</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4  margin-bottom-2rem">
+				<div class="card">
+					<div class="card-header">
+						<h3>Vakgebieden met de meeste vacatures</h3>
+					</div>
+					<div class="card-body chart-container">
+						<canvas id="skills" style="height:100%" aria-label="Vakgebieden met de meeste vacatures"></canvas>
+
+					</div>
+					<p>According to Matchcare's Career Compass, you need these 7 talents to make the above professions a success
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+		integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="data.js" type="module"></script>
+	<script src="chart.js" type="module"></script>
+	<script src="index.js" type="module"></script>
+</body>
+</html>
